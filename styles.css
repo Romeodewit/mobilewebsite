@@ -73,7 +73,7 @@ header nav ul li a {
 main .container {
     height: 600px;
     width: 800px;
-    background-image: url("./images/bar.jpg");
+    background-image: url("Images/bar.jpg");
     background-position: top;
     background-size: contain;
     background-size: cover;
