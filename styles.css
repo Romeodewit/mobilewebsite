@@ -1,0 +1,205 @@
+html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: black;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0%;
+    
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+header h1 {
+    float: left;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 0;
+    line-height: 0.6;
+    font-family: 'Permanent Marker', cursive;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 90px;
+    padding-top: 39px;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+main .container {
+    height: 600px;
+    width: 800px;
+    background-image: url("images/bar.jpg");
+    background-position: top;
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    border: 0.5px solid black;
+    border-bottom: none;
+}
+
+main .container h2 { 
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    margin: 30px auto;
+    font-family: 'Permanent Marker', cursive;
+}
+
+main .content {
+
+}
+
+main {
+    position: relative;
+    margin: 70px auto;
+    max-width: 800px;
+
+}
+
+footer {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    margin-top: auto;
+}
+
+footer form {
+    line-height: 3;
+    float: left;
+    font-weight: bold;
+}
+footer .contact {
+    width: 50%;
+    display: flex;
+    list-style: none;
+    float: right;
+    line-height: 0.1;
+    font-size: 12px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+footer .contact ul {
+    float: right;
+    list-style: none;
+    top: 0;
+    line-height: 0.9;
+    margin-right: 300px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+footer .contact h4 {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+@media screen and (max-width: 1500px) {
+    
+    header nav ul li {
+        display: inline-flex;
+        margin-left: 50px; 
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    header {
+    } 
+    header h1 {
+        line-height: 1.8;
+        color: white;
+        font-size: 30px;
+    }
+    header nav ul li {
+        margin-left: 10px;
+    }
+
+    .container {
+        max-width: 400px;
+        max-height: 400px;
+        margin: 0 auto;
+    }
+    .content {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    main .container h2 { 
+        font-size: 40px;
+    }
+
+    footer{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    header {
+        height: 70px;
+    } 
+    header h1 {
+        line-height: 2;
+        color: white;
+        font-size: 30px;
+    }
+    header nav ul li {
+        margin-left: 10px;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .content {
+        max-width: 300px;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    main .container h2 { 
+        font-size: 30px;
+    }
+}
